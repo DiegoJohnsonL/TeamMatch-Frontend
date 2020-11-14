@@ -1,0 +1,14 @@
+{
+  "sponsors": [
+    {
+      "id": 1,
+      "name": "HyperX",
+      "url": "hyperx.com"
+    },
+    {
+      "id": 2,
+      "name": "Nike",
+      "url": "www.nike.com"
+    }
+  ]
+}

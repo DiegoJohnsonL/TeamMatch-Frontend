@@ -17,6 +17,10 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import {MatCardModule} from '@angular/material/card';
 import {FormsModule} from '@angular/forms';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import { SponsorsComponent } from './page/sponsors/sponsors.component';
+import {MatTableModule} from '@angular/material/table';
+import {MatPaginatorModule} from '@angular/material/paginator';
+import {MatInputModule} from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -25,7 +29,8 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     OrganizersComponent,
     TeamsComponent,
     PlayerHomePageComponent,
-    OrganizerHomePageComponent
+    OrganizerHomePageComponent,
+    SponsorsComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +43,10 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     MatGridListModule,
     MatCardModule,
     FormsModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
