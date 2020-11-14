@@ -15,7 +15,7 @@ export class TournamentComponent implements OnInit , AfterViewInit {
   playerForm: NgForm;
   isEditMode = false;
   dataSource = new MatTableDataSource();
-  displayedColumns: string[] = ['id', 'name', 'age', 'address', 'actions'];
+  displayedColumns: string[] = ['id', 'name', 'organizer', 'public', 'actions'];
   @ViewChild(MatPaginator) paginator: MatPaginator;
   @ViewChild(MatSort) sort: MatSort;
   constructor(private router: Router, private route: ActivatedRoute) { }
