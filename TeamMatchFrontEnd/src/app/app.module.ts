@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {HttpClientModule} from '@angular/common/http';
 import { PlayersComponent } from './page/players/players.component';
+import { OrganizersComponent } from './page/organizers/organizers.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PlayersComponent
+    PlayersComponent,
+    OrganizersComponent
   ],
   imports: [
     BrowserModule,
