@@ -16,7 +16,7 @@ export class TeamsComponent implements OnInit {
   isEditMode = false;
   teamId: number;
   teamData: Team = new Team();
-  defaultTeam = { id: 0, name: '', teamSize: 0, hoursPlayed: 0, levelAverage: 0};
+  defaultTeam = { id: 0, name: '', teamSize: null, hoursPlayed: null, levelAverage: null};
   constructor(private httpTeamService: HttpTeamService, private router: Router, private route: ActivatedRoute) { }
 
 
