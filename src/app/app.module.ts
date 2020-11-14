@@ -15,6 +15,8 @@ import { PlayerHomePageComponent } from './page/player-home-page/player-home-pag
 import { OrganizerHomePageComponent } from './page/organizer-home-page/organizer-home-page.component';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatCardModule} from '@angular/material/card';
+import { TournamentComponent } from './page/tournament/tournament.component';
+import {MatTableModule} from '@angular/material/table';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,8 @@ import {MatCardModule} from '@angular/material/card';
     OrganizersComponent,
     TeamsComponent,
     PlayerHomePageComponent,
-    OrganizerHomePageComponent
+    OrganizerHomePageComponent,
+    TournamentComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +37,8 @@ import {MatCardModule} from '@angular/material/card';
     MatIconModule,
     MatButtonModule,
     MatGridListModule,
-    MatCardModule
+    MatCardModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

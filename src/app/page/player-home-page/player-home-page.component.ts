@@ -2,7 +2,7 @@ import {Component, OnInit, ViewChild} from '@angular/core';
 import {HttpPlayerService} from '../../services/http-player.service';
 import {Player} from '../../models/player';
 import * as _ from 'lodash';
-
+import {Router} from '@angular/router';
 @Component({
   selector: 'app-player-home-page',
   templateUrl: './player-home-page.component.html',
@@ -11,7 +11,7 @@ import * as _ from 'lodash';
 export class PlayerHomePageComponent implements OnInit {
   playerData: Player = new Player();
   playerId: number;
-  constructor(private httpPlayerService: HttpPlayerService) { }
+  constructor(private httpPlayerService: HttpPlayerService, private router: Router) { }
 
   ngOnInit(): void {
     this.playerId = 1;
@@ -24,5 +24,8 @@ export class PlayerHomePageComponent implements OnInit {
         console.log(response);
         console.log(this.playerData);
       });
+  }
+  navigateToSearchTournament(): void {
+    this.router.navigate(['/tournament/search']).then(() => null);
   }
 }
