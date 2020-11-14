@@ -17,6 +17,7 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import {MatCardModule} from '@angular/material/card';
 import {FormsModule} from '@angular/forms';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import { AddTeamplayerComponent } from './page/add-teamplayer/add-teamplayer.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     OrganizersComponent,
     TeamsComponent,
     PlayerHomePageComponent,
-    OrganizerHomePageComponent
+    OrganizerHomePageComponent,
+    AddTeamplayerComponent
   ],
   imports: [
     BrowserModule,
