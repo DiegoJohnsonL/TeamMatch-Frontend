@@ -1,6 +1,8 @@
 export class Player {
+  createdAt: any;
+  updatedAt: any;
+  id: number;
   username: string;
-  password: string;
   firstName: string;
   lastName: string;
   description: string;
