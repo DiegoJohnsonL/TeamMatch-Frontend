@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule, routingComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {HttpClientModule} from '@angular/common/http';
@@ -22,6 +22,7 @@ import { AddTeamplayerComponent } from './page/add-teamplayer/add-teamplayer.com
 @NgModule({
   declarations: [
     AppComponent,
+    routingComponents,
     PlayersComponent,
     OrganizersComponent,
     TeamsComponent,
@@ -34,6 +35,7 @@ import { AddTeamplayerComponent } from './page/add-teamplayer/add-teamplayer.com
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
+    MatCardModule,
     MatToolbarModule,
     MatIconModule,
     MatButtonModule,
