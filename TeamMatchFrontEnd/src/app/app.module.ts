@@ -15,8 +15,8 @@ import { PlayerHomePageComponent } from './page/player-home-page/player-home-pag
 import { OrganizerHomePageComponent } from './page/organizer-home-page/organizer-home-page.component';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatCardModule} from '@angular/material/card';
-import {FormsModule} from "@angular/forms";
-import {MatFormFieldModule} from "@angular/material/form-field";
+import {FormsModule} from '@angular/forms';
+import {MatFormFieldModule} from '@angular/material/form-field';
 
 @NgModule({
   declarations: [
