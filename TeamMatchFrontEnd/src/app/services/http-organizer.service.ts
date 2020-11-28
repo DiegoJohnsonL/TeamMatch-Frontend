@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import {HttpClient, HttpErrorResponse, HttpHeaders} from '@angular/common/http';
 import {Observable, throwError} from 'rxjs';
-import {catchError, retry, map} from 'rxjs/operators';
+import {catchError, retry} from 'rxjs/operators';
 import {Organizer} from '../models/organizer';
 
 @Injectable({

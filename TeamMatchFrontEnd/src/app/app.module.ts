@@ -11,9 +11,6 @@ import { TeamsComponent } from './pages/teams/teams.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
-import { OrganizerProfileComponent } from './page/organizer-profile/organizer-profile.component';
-import {MatTableModule} from '@angular/material/table';
-import {MatPaginatorModule} from '@angular/material/paginator';
 import { PlayerHomePageComponent } from './pages/player-home-page/player-home-page.component';
 import { OrganizerHomePageComponent } from './pages/organizer-home-page/organizer-home-page.component';
 import { MatGridListModule } from '@angular/material/grid-list';
@@ -38,7 +35,6 @@ import {MatInputModule} from '@angular/material/input';
     PlayerHomePageComponent,
     OrganizerHomePageComponent,
     AddTeamplayerComponent,
-    OrganizerProfileComponent,
     LoginComponent,
     ProfileComponent,
     RegisterComponent
@@ -57,9 +53,6 @@ import {MatInputModule} from '@angular/material/input';
     MatCardModule,
     FormsModule,
     MatFormFieldModule,
-    MatTableModule,
-    MatPaginatorModule,
-    MatInputModule,
     ReactiveFormsModule,
     MatListModule
   ],
