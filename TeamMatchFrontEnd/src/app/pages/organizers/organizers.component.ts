@@ -15,7 +15,7 @@ import {HttpPlayerService} from "../../services/http-player.service";
   styleUrls: ['./organizers.component.css']
 })
 export class OrganizersComponent implements OnInit, AfterViewInit {
-  @ViewChild('studentForm', { static: false })
+  @ViewChild('organizerForm', { static: false })
   organizerForm: NgForm;
   organizerData: Organizer;
   dataSource = new MatTableDataSource();
@@ -31,7 +31,6 @@ export class OrganizersComponent implements OnInit, AfterViewInit {
   ngOnInit(): void {
     this.dataSource.sort = this.sort;
     this.retrieveOrganizerList();
-    //this.getAllPlayers();
   }
 
   ngAfterViewInit(): void {
@@ -47,13 +46,6 @@ export class OrganizersComponent implements OnInit, AfterViewInit {
     }
   }
 
-  /*getAllPlayers(): void {
-    this.httpPlayerService.getPlayersList().subscribe((response: any) => {
-      console.log(response.content);
-      this.playerData = response.content;
-      console.log(this.playerData);
-    });
-  }*/
 
   retrieveOrganizerList(): void {
     this.httpOrganizerService.getOrganizerList().subscribe((response: any) => {
@@ -81,9 +73,13 @@ export class OrganizersComponent implements OnInit, AfterViewInit {
     console.log(this.dataSource.data);
   }
   addOrganizer(): void {
-    const newOrganizer = {firstName: this.organizerData.firstName, lastName: this.organizerData.lastName,
-      gender: this.organizerData.gender, phoneNumber: this.organizerData.phoneNumber};
+    const newOrganizer = {username: this.organizerData.username, password: this.organizerData.password,
+      firstName: this.organizerData.firstName, lastName: this.organizerData.lastName,
+      description: this.organizerData.description, gender: this.organizerData.gender,
+      emailAddress: this.organizerData.emailAddress, phoneNumber: this.organizerData.phoneNumber,
+      birthDate: this.organizerData.birthDate};
     this.httpOrganizerService.createOrganizer(newOrganizer).subscribe((response: any) => {
+      console.log(response);
       this.dataSource.data.push({...response});
       this.dataSource.data = this.dataSource.data.map(o => o);
     });
