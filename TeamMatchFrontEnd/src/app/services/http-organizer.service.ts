@@ -8,8 +8,8 @@ import {Organizer} from '../models/organizer';
   providedIn: 'root'
 })
 export class HttpOrganizerService {
-  //basePath = 'https://teammatchtournament.herokuapp.com/api/organizers';
-  basePath = 'http://localhost:8081/api/organizers';
+  basePath = 'https://teammatchtournament.herokuapp.com/api/organizers';
+  // basePath = 'http://localhost:8081/api/organizers';
   constructor(private http: HttpClient) { }
   httpOptions = {
     headers: new HttpHeaders({

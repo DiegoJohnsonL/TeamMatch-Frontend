@@ -7,21 +7,19 @@ import {TeamsComponent} from './pages/teams/teams.component';
 import {AddTeamplayerComponent} from './pages/add-teamplayer/add-teamplayer.component';
 import {LoginComponent} from './pages/login/login.component';
 import {RegisterComponent} from './pages/register/register.component';
-import {UsersListComponent} from './pages/users-list/users-list.component';
-import {AppComponent} from './app.component';
 import {ProfileComponent} from './pages/profile/profile.component';
+import {AppComponent} from './app.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
-  { path: 'playersHomePage', component: PlayerHomePageComponent },
-  { path: 'organizersHomePage', component: OrganizerHomePageComponent },
+  { path: 'playerHomePage', component: PlayerHomePageComponent },
+  { path: 'organizerHomePage', component: OrganizerHomePageComponent },
   { path: 'createTeam', component: TeamsComponent },
   { path: 'addTeamPlayer', component: AddTeamplayerComponent },
   { path: 'organizers', component: OrganizersComponent},
   {path: 'login', component: LoginComponent},
   {path: 'register', component: RegisterComponent },
   {path: 'profile', component: ProfileComponent},
-  {path: 'user-list', component: UsersListComponent}
 ];
 
 @NgModule({
@@ -29,4 +27,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
-export const routingComponents = [OrganizersComponent];
+export const routingComponents = [AppComponent];

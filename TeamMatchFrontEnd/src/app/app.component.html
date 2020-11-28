@@ -6,8 +6,8 @@
       </button>
       <span class="app-name">Team Match</span>
       <div routerLinkActive="active">
-        <a mat-button [routerLink]="'/home'">Home</a>
-        <a mat-button *ngIf="isLoggedIn" [routerLink]="'/users'">Users</a>
+        <a mat-button *ngIf="isLoggedIn" [routerLink]="'/organizers'">Players</a>
+        <a mat-button *ngIf="isLoggedIn" [routerLink]="'/players'">Organizers</a>
       </div>
       <span class="flex-expand"></span>
       <div *ngIf="!isLoggedIn">
@@ -24,5 +24,3 @@
     <router-outlet></router-outlet>
   </div>
 </div>
-
-

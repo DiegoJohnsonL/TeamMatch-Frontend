@@ -14,6 +14,7 @@ export class LoginComponent implements OnInit {
   isLoggedIn = false;
   isLoginFailed = false;
   errorMessage = '';
+  userType: string;
   roles: string[] = [];
   constructor(private formBuilder: FormBuilder,
               private router: Router,
@@ -38,15 +39,18 @@ export class LoginComponent implements OnInit {
       return;
     }
     console.log(this.form.value);
+    localStorage.setItem('user_type', this.userType);
     this.authService.login(this.form.value).subscribe(
       data => {
         console.log(data);
+        console.log(this.userType);
         this.tokenStorageService.saveToken(data.token);
         this.tokenStorageService.saveUser(data);
         this.isLoginFailed = false;
         this.isLoggedIn = true;
         this.roles = this.tokenStorageService.getUser().roles;
-        return this.router.navigate(['playersHomePage']);
+        if (this.userType === 'organizer') { return this.router.navigate(['organizerHomePage']); }
+        else { return this.router.navigate(['playerHomePage']); }
       },
       error => {
         console.log(error.error.errorMessage);

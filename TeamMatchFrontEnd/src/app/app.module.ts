@@ -21,7 +21,6 @@ import { AddTeamplayerComponent } from './pages/add-teamplayer/add-teamplayer.co
 import { authInterceptorProviders } from './helpers/auth.interceptor';
 import { LoginComponent } from './pages/login/login.component';
 import { ProfileComponent } from './pages/profile/profile.component';
-import { UsersListComponent } from './pages/users-list/users-list.component';
 import { RegisterComponent } from './pages/register/register.component';
 import {MatListModule} from '@angular/material/list';
 import {MatInputModule} from '@angular/material/input';
@@ -38,7 +37,6 @@ import {MatInputModule} from '@angular/material/input';
     AddTeamplayerComponent,
     LoginComponent,
     ProfileComponent,
-    UsersListComponent,
     RegisterComponent
   ],
   imports: [
