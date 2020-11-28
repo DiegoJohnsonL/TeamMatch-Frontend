@@ -102,7 +102,7 @@ export class TeamsComponent implements OnInit {
     }
   }
   navigateToAddTeam(): void {
-    this.router.navigate(['/team/new']).then(() => null);
+    this.router.navigate(['/add-teamplayer']).then(() => null);
   }
   navigateToEditTeam(teamId): void {
     this.router.navigate([`/teams/${teamId}`]).then(() => null);
