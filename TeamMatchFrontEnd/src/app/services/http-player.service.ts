@@ -35,7 +35,7 @@ export class HttpPlayerService {
   }
   // Get Player Data
   getPlayersList(): Observable<Player>{
-    return this.http.get<Player>(this.basePath)
+    return this.http.get<Player>(`${this.basePath}`, this.httpOptions)
       .pipe(retry(2), catchError(this.handleError));
   }
   // Update Player

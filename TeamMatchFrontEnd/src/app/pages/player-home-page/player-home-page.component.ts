@@ -10,12 +10,14 @@ import * as _ from 'lodash';
 })
 export class PlayerHomePageComponent implements OnInit {
   playerData: Player = new Player();
+  playerDataList: Player = new Player();
   playerId: number;
   constructor(private httpPlayerService: HttpPlayerService) { }
 
   ngOnInit(): void {
     this.playerId = 1;
     this.retrievePlayer(this.playerId);
+    this.retrievePlayerList();
   }
   retrievePlayer(id: number): void {
     this.httpPlayerService.getPlayer(id).subscribe((response: Player) => {
@@ -24,5 +26,14 @@ export class PlayerHomePageComponent implements OnInit {
         console.log(response);
         console.log(this.playerData);
       });
+  }
+
+  retrievePlayerList(): void {
+    this.httpPlayerService.getPlayersList().subscribe((response: Player) => {
+      this.playerDataList = {} as Player;
+      this.playerDataList = _.cloneDeep(response);
+      console.log(response);
+      console.log(this.playerDataList);
+    });
   }
 }

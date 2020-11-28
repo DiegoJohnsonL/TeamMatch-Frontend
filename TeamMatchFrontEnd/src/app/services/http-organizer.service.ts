@@ -34,7 +34,7 @@ export class HttpOrganizerService {
   }
   // Get Organizer Data
   getOrganizerList(): Observable<Organizer>{
-    return this.http.get<Organizer>(this.basePath)
+    return this.http.get<Organizer>(this.basePath, this.httpOptions)
       .pipe(retry(2), catchError(this.handleError));
   }
   // Update Organizer
