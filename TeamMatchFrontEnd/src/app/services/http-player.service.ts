@@ -3,16 +3,17 @@ import {HttpClient, HttpErrorResponse, HttpHeaders} from '@angular/common/http';
 import {Observable, throwError} from 'rxjs';
 import {Player} from '../models/player';
 import {catchError, retry} from 'rxjs/operators';
+import {TokenStorageService} from './token-storage.service';
 
 @Injectable({
   providedIn: 'root'
 })
 export class HttpPlayerService {
   basePath = 'https://team-match-backend.herokuapp.com/api/players';
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient, tokenStorageService: TokenStorageService) { }
   httpOptions = {
     headers: new HttpHeaders({
-      'Content-Type' : 'application/json'
+      'Content-Type' : 'application/json',
     })
   };
   handleError(error: HttpErrorResponse): Observable<never> {

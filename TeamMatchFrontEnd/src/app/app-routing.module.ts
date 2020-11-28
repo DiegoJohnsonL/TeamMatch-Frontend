@@ -7,11 +7,12 @@ import {TeamsComponent} from './page/teams/teams.component';
 import {AddTeamplayerComponent} from './page/add-teamplayer/add-teamplayer.component';
 
 const routes: Routes = [
+  { path: 'organizers', component: OrganizersComponent }
   { path: 'playersHomePage', component: PlayerHomePageComponent },
   { path: 'organizersHomePage', component: OrganizerHomePageComponent },
   { path: 'createTeam', component: TeamsComponent },
-  { path: 'addTeamPlayer', component: AddTeamplayerComponent },
-  { path: 'organizers', component: OrganizersComponent},
+  { path: 'addTeamPlayer', component: AddTeamplayerComponent }
+
 ];
 
 @NgModule({

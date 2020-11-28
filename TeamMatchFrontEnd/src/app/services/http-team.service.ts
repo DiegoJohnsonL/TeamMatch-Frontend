@@ -8,7 +8,7 @@ import {Team} from '../models/team';
   providedIn: 'root'
 })
 export class HttpTeamService {
-  basePath = 'https://teammatchtournament.herokuapp.com/api/teams';
+  basePath = 'https://team-match-backend.herokuapp.com/api/teams';
   constructor(private http: HttpClient) { }
   httpOptions = {
     headers: new HttpHeaders({

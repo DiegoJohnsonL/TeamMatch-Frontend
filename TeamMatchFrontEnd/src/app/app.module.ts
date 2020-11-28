@@ -5,22 +5,27 @@ import { AppRoutingModule, routingComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {HttpClientModule} from '@angular/common/http';
-import { PlayersComponent } from './page/players/players.component';
-import { OrganizersComponent } from './page/organizers/organizers.component';
-import { TeamsComponent } from './page/teams/teams.component';
+import { PlayersComponent } from './pages/players/players.component';
+import { OrganizersComponent } from './pages/organizers/organizers.component';
+import { TeamsComponent } from './pages/teams/teams.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
-import { PlayerHomePageComponent } from './page/player-home-page/player-home-page.component';
-import { OrganizerHomePageComponent } from './page/organizer-home-page/organizer-home-page.component';
-import {MatGridListModule} from '@angular/material/grid-list';
-import {MatCardModule} from '@angular/material/card';
-import {FormsModule} from '@angular/forms';
-import {MatFormFieldModule} from '@angular/material/form-field';
-import { AddTeamplayerComponent } from './page/add-teamplayer/add-teamplayer.component';
 import { OrganizerProfileComponent } from './page/organizer-profile/organizer-profile.component';
 import {MatTableModule} from '@angular/material/table';
 import {MatPaginatorModule} from '@angular/material/paginator';
+import { PlayerHomePageComponent } from './pages/player-home-page/player-home-page.component';
+import { OrganizerHomePageComponent } from './pages/organizer-home-page/organizer-home-page.component';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatCardModule } from '@angular/material/card';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { AddTeamplayerComponent } from './pages/add-teamplayer/add-teamplayer.component';
+import { authInterceptorProviders } from './helpers/auth.interceptor';
+import { LoginComponent } from './pages/login/login.component';
+import { ProfileComponent } from './pages/profile/profile.component';
+import { RegisterComponent } from './pages/register/register.component';
+import {MatListModule} from '@angular/material/list';
 import {MatInputModule} from '@angular/material/input';
 
 @NgModule({
@@ -33,7 +38,10 @@ import {MatInputModule} from '@angular/material/input';
     PlayerHomePageComponent,
     OrganizerHomePageComponent,
     AddTeamplayerComponent,
-    OrganizerProfileComponent
+    OrganizerProfileComponent,
+    LoginComponent,
+    ProfileComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
@@ -41,6 +49,7 @@ import {MatInputModule} from '@angular/material/input';
     BrowserAnimationsModule,
     HttpClientModule,
     MatCardModule,
+    MatInputModule,
     MatToolbarModule,
     MatIconModule,
     MatButtonModule,
@@ -50,9 +59,11 @@ import {MatInputModule} from '@angular/material/input';
     MatFormFieldModule,
     MatTableModule,
     MatPaginatorModule,
-    MatInputModule
+    MatInputModule,
+    ReactiveFormsModule,
+    MatListModule
   ],
-  providers: [],
+  providers: [authInterceptorProviders],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
