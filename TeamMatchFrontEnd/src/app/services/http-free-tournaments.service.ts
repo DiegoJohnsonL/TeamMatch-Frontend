@@ -32,5 +32,9 @@ export class HttpFreeTournamentsService {
     return this.http.get<FreeTournament>(`${this.basePath}/${id}/${this.baseTournament}`, this.httpOptions )
       .pipe(retry(2), catchError(this.handleError));
   }
+  getTournament(ido, idt): Observable<FreeTournament> {
+    return this.http.get<FreeTournament>(`${this.basePath}/${ido}/${this.baseTournament}/${idt}`, this.httpOptions )
+      .pipe(retry(2), catchError(this.handleError));
+  }
 
 }
