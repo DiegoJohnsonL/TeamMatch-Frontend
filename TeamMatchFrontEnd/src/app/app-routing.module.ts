@@ -9,6 +9,8 @@ import {LoginComponent} from './pages/login/login.component';
 import {RegisterComponent} from './pages/register/register.component';
 import {ProfileComponent} from './pages/profile/profile.component';
 import {AppComponent} from './app.component';
+import {TournamentComponent} from './pages/tournament/tournament.component';
+import {OrganizerTournamentComponent} from './pages/organizer-tournament/organizer-tournament.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
@@ -20,6 +22,8 @@ const routes: Routes = [
   {path: 'login', component: LoginComponent},
   {path: 'register', component: RegisterComponent },
   {path: 'profile', component: ProfileComponent},
+  { path: 'organizers/:id/free-tournaments', component: TournamentComponent},
+  { path: 'player/organizers', component: OrganizerTournamentComponent},
 ];
 
 @NgModule({
