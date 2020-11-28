@@ -8,7 +8,7 @@ import {catchError, retry} from 'rxjs/operators';
   providedIn: 'root'
 })
 export class HttpPlayerService {
-  basePath = 'https://teammatchtournament.herokuapp.com/api/players';
+  basePath = 'https://team-match-backend.herokuapp.com/api/players';
   constructor(private http: HttpClient) { }
   httpOptions = {
     headers: new HttpHeaders({

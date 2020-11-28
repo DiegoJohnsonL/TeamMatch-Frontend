@@ -11,7 +11,7 @@ const routes: Routes = [
   { path: 'organizersHomePage', component: OrganizerHomePageComponent },
   { path: 'createTeam', component: TeamsComponent },
   { path: 'addTeamPlayer', component: AddTeamplayerComponent },
-  { path: 'organizers', component: OrganizersComponent}
+  { path: 'organizers', component: OrganizersComponent},
 ];
 
 @NgModule({

@@ -1,15 +1,14 @@
 import { Injectable } from '@angular/core';
 import {HttpClient, HttpErrorResponse, HttpHeaders} from '@angular/common/http';
 import {Observable, throwError} from 'rxjs';
-import {catchError, retry} from 'rxjs/operators';
+import {catchError, retry, map} from 'rxjs/operators';
 import {Organizer} from '../models/organizer';
 
 @Injectable({
   providedIn: 'root'
 })
 export class HttpOrganizerService {
-  //basePath = 'https://teammatchtournament.herokuapp.com/api/organizers';
-  basePath = 'http://localhost:8081/api/organizers';
+  basePath = 'https://team-match-backend.herokuapp.com/api/organizers';
   constructor(private http: HttpClient) { }
   httpOptions = {
     headers: new HttpHeaders({

@@ -18,6 +18,10 @@ import {MatCardModule} from '@angular/material/card';
 import {FormsModule} from '@angular/forms';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { AddTeamplayerComponent } from './page/add-teamplayer/add-teamplayer.component';
+import { OrganizerProfileComponent } from './page/organizer-profile/organizer-profile.component';
+import {MatTableModule} from '@angular/material/table';
+import {MatPaginatorModule} from '@angular/material/paginator';
+import {MatInputModule} from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -28,7 +32,8 @@ import { AddTeamplayerComponent } from './page/add-teamplayer/add-teamplayer.com
     TeamsComponent,
     PlayerHomePageComponent,
     OrganizerHomePageComponent,
-    AddTeamplayerComponent
+    AddTeamplayerComponent,
+    OrganizerProfileComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +47,10 @@ import { AddTeamplayerComponent } from './page/add-teamplayer/add-teamplayer.com
     MatGridListModule,
     MatCardModule,
     FormsModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
