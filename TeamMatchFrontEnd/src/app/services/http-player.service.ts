@@ -10,6 +10,8 @@ import {TokenStorageService} from './token-storage.service';
 })
 export class HttpPlayerService {
   basePath = 'https://team-match-backend.herokuapp.com/api/players';
+  basePath2 = 'https://team-match-backend.herokuapp.com/api/freeTournaments';
+  basePlayer = 'players';
   constructor(private http: HttpClient, tokenStorageService: TokenStorageService) { }
   httpOptions = {
     headers: new HttpHeaders({
@@ -46,6 +48,10 @@ export class HttpPlayerService {
   // Delete Player
   deletePlayer(id): Observable<any> {
     return this.http.delete<Player>(`${this.basePath}/${id}`, this.httpOptions)
+      .pipe(retry(2), catchError(this.handleError));
+  }
+  getListByTournamentId(id): Observable<Player>{
+    return this.http.get<Player>(`${this.basePath2}/${id}/${this.basePlayer}`, this.httpOptions )
       .pipe(retry(2), catchError(this.handleError));
   }
 }
