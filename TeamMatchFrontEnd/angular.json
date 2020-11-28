@@ -122,5 +122,8 @@
       }
     }
   },
-  "defaultProject": "TeamMatchFrontEnd"
+  "defaultProject": "TeamMatchFrontEnd",
+  "cli": {
+    "analytics": "6be5003c-9c73-48f2-9912-7981aa9d607d"
+  }
 }
