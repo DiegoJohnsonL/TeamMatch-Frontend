@@ -16,7 +16,7 @@ const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
   { path: 'playerHomePage', component: PlayerHomePageComponent },
   { path: 'organizerHomePage', component: OrganizerHomePageComponent },
-  { path: 'createTeam', component: TeamsComponent },
+  { path: 'teams', component: TeamsComponent },
   { path: 'addTeamPlayer', component: AddTeamplayerComponent },
   { path: 'organizers', component: OrganizersComponent},
   {path: 'login', component: LoginComponent},

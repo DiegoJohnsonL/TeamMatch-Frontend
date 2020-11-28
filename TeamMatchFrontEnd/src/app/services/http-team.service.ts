@@ -33,8 +33,8 @@ export class HttpTeamService {
       .pipe(retry(2), catchError(this.handleError));
   }
   // Get Team Data
-  getTeamsList(): Observable<Team>{
-    return this.http.get<Team>(this.basePath)
+  getTeamList(): Observable<Team>{
+    return this.http.get<Team>(this.basePath, this.httpOptions)
       .pipe(retry(2), catchError(this.handleError));
   }
   // Update Team
