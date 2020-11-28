@@ -15,9 +15,16 @@ import { PlayerHomePageComponent } from './page/player-home-page/player-home-pag
 import { OrganizerHomePageComponent } from './page/organizer-home-page/organizer-home-page.component';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatCardModule} from '@angular/material/card';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { AddTeamplayerComponent } from './page/add-teamplayer/add-teamplayer.component';
+import { TournamentComponent } from './page/tournament/tournament.component';
+import {MatTableModule} from '@angular/material/table';
+import {MatPaginatorModule} from '@angular/material/paginator';
+import { OrganizerTournamentComponent } from './page/organizer-tournament/organizer-tournament.component';
+import { PlayerTournamentAddComponent } from './page/player-tournament-add/player-tournament-add.component';
+
+
 
 @NgModule({
   declarations: [
@@ -28,22 +35,29 @@ import { AddTeamplayerComponent } from './page/add-teamplayer/add-teamplayer.com
     TeamsComponent,
     PlayerHomePageComponent,
     OrganizerHomePageComponent,
-    AddTeamplayerComponent
+    AddTeamplayerComponent,
+    TournamentComponent,
+    OrganizerTournamentComponent,
+    PlayerTournamentAddComponent,
+
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    HttpClientModule,
-    MatCardModule,
-    MatToolbarModule,
-    MatIconModule,
-    MatButtonModule,
-    MatGridListModule,
-    MatCardModule,
-    FormsModule,
-    MatFormFieldModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        HttpClientModule,
+        MatCardModule,
+        MatToolbarModule,
+        MatIconModule,
+        MatButtonModule,
+        MatGridListModule,
+        MatCardModule,
+        FormsModule,
+        MatFormFieldModule,
+        MatTableModule,
+        MatPaginatorModule,
+        ReactiveFormsModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

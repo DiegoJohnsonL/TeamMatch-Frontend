@@ -9,7 +9,7 @@ import {Organizer} from '../models/organizer';
 })
 export class HttpOrganizerService {
   //basePath = 'https://teammatchtournament.herokuapp.com/api/organizers';
-  basePath = 'http://localhost:8081/api/organizers';
+  basePath = 'http://localhost:3000/api/organizers';
   constructor(private http: HttpClient) { }
   httpOptions = {
     headers: new HttpHeaders({
