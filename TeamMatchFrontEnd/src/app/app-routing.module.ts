@@ -1,25 +1,18 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import {OrganizersComponent} from './pages/organizers/organizers.component';
-import {PlayerHomePageComponent} from './pages/player-home-page/player-home-page.component';
-import {OrganizerHomePageComponent} from './pages/organizer-home-page/organizer-home-page.component';
-import {TeamsComponent} from './pages/teams/teams.component';
-import {AddTeamplayerComponent} from './pages/add-teamplayer/add-teamplayer.component';
-import {LoginComponent} from './pages/login/login.component';
-import {RegisterComponent} from './pages/register/register.component';
-import {ProfileComponent} from './pages/profile/profile.component';
-import {AppComponent} from './app.component';
+import {OrganizersComponent} from './page/organizers/organizers.component';
+import {PlayerHomePageComponent} from './page/player-home-page/player-home-page.component';
+import {OrganizerHomePageComponent} from './page/organizer-home-page/organizer-home-page.component';
+import {TeamsComponent} from './page/teams/teams.component';
+import {AddTeamplayerComponent} from './page/add-teamplayer/add-teamplayer.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'login', pathMatch: 'full' },
-  { path: 'playerHomePage', component: PlayerHomePageComponent },
-  { path: 'organizerHomePage', component: OrganizerHomePageComponent },
+  { path: 'organizers', component: OrganizersComponent }
+  { path: 'playersHomePage', component: PlayerHomePageComponent },
+  { path: 'organizersHomePage', component: OrganizerHomePageComponent },
   { path: 'createTeam', component: TeamsComponent },
-  { path: 'addTeamPlayer', component: AddTeamplayerComponent },
-  { path: 'organizers', component: OrganizersComponent},
-  {path: 'login', component: LoginComponent},
-  {path: 'register', component: RegisterComponent },
-  {path: 'profile', component: ProfileComponent},
+  { path: 'addTeamPlayer', component: AddTeamplayerComponent }
+
 ];
 
 @NgModule({
@@ -27,4 +20,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
-export const routingComponents = [AppComponent];
+export const routingComponents = [OrganizersComponent];
