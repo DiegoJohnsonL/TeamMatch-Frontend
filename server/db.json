@@ -1,0 +1,479 @@
+{
+  "organizers": [
+    {
+      "id": 1,
+      "username":"Raul",
+      "password":"123465",
+      "firstName":"Valdez",
+      "lastName":"Palacios",
+      "description":"adadas",
+      "gender":"F",
+      "emailAddress":"@gmail.com",
+      "phoneNumber":"958420"
+    },
+    {
+      "id": 2,
+      "username":"maradona-55",
+      "password":"123465",
+      "firstName":"Valdez",
+      "lastName":"Palacios",
+      "description":"ssfsasaa",
+      "gender":"F",
+      "emailAddress":"@gmail.com",
+      "phoneNumber":"958420"
+    },
+    {
+      "id": 3,
+      "username":"cat-04",
+      "password":"123465",
+      "firstName":"Valdez",
+      "lastName":"Palacios",
+      "description":".dadadad.",
+      "gender":"F",
+      "emailAddress":"@gmail.com",
+      "phoneNumber":"958420"
+    },
+    {
+      "id": 4,
+      "username":"Paolo",
+      "password":"123465",
+      "firstName":"Valdez",
+      "lastName":"Palacios",
+      "description":"adadad",
+      "gender":"F",
+      "emailAddress":"@gmail.com",
+      "phoneNumber":"958420"
+    },
+    {
+      "id": 5,
+      "username":"Jose",
+      "password":"123465",
+      "firstName":"Valdez",
+      "lastName":"Palacios",
+      "description":"adda",
+      "gender":"F",
+      "emailAddress":"@gmail.com",
+      "phoneNumber":"958420"
+    },
+    {
+      "id": 6,
+      "username":"dog-005",
+      "password":"123465",
+      "firstName":"Valdez",
+      "lastName":"Palacios",
+      "description":"adda",
+      "gender":"F",
+      "emailAddress":"@gmail.com",
+      "phoneNumber":"958420"
+    },
+    {
+      "id": 7,
+      "username":"Mister-54",
+      "password":"123465",
+      "firstName":"Valdez",
+      "lastName":"Palacios",
+      "description":"adda",
+      "gender":"F",
+      "emailAddress":"@gmail.com",
+      "phoneNumber":"958420"
+    },
+    {
+      "id": 8,
+      "username":"Arkano",
+      "password":"123465",
+      "firstName":"Valdez",
+      "lastName":"Palacios",
+      "description":"adda",
+      "gender":"F",
+      "emailAddress":"@gmail.com",
+      "phoneNumber":"958420"
+    }
+  ],
+
+  "free-tournaments" : [
+    {
+      "id": 1,
+      "name":"tournament 1",
+      "description":"tournament good",
+      "prize":"an car",
+      "publicTournament":"False",
+      "code":"fd60",
+      "maxTeams":10,
+      "organizerId": 1
+    },
+    {
+      "id": 2,
+      "name":"tournament 2",
+      "description":"tournament good",
+      "prize":"an car",
+      "publicTournament":"False",
+      "code":"fd60",
+      "maxTeams":10,
+      "organizerId": 1
+    },
+    {
+      "id": 3 ,
+      "name":"tournament 3",
+      "description":"tournament good",
+      "prize":"an car",
+      "publicTournament":"False",
+      "code":"fd60",
+      "maxTeams":10,
+      "organizerId": 2
+    },
+    {
+      "id": 4,
+      "name":"tournament 4",
+      "description":"tournament good",
+      "prize":"an car",
+      "publicTournament":"False",
+      "code":"fd60",
+      "maxTeams":10,
+      "organizerId": 1
+    },{
+      "id": 5,
+      "name":"tournament 5",
+      "description":"tournament good",
+      "prize":"an car",
+      "publicTournament":"False",
+      "code":"fd60",
+      "maxTeams":10,
+      "organizerId": 2
+    },
+    {
+      "id": 6,
+      "name":"tournament 6",
+      "description":"tournament good",
+      "prize":"an car",
+      "publicTournament":"False",
+      "code":"fd60",
+      "maxTeams":10,
+      "organizerId": 2
+    },
+    {
+      "id": 7,
+      "name":"tournament 7",
+      "description":"tournament good",
+      "prize":"an car",
+      "publicTournament":"False",
+      "code":"fd60",
+      "maxTeams":10,
+      "organizerId": 3
+    },
+    {
+      "id": 8,
+      "name":"tournament 8",
+      "description":"tournament good",
+      "prize":"an car",
+      "publicTournament":"False",
+      "code":"fd60",
+      "maxTeams":10,
+      "organizerId": 4
+    },
+    {
+      "id": 9,
+      "name":"tournament 9",
+      "description":"tournament good",
+      "prize":"an car",
+      "publicTournament":"False",
+      "code":"fd60",
+      "maxTeams":10,
+      "organizerId": 2
+    }
+  ],
+  "professional-tournaments" : [
+    {
+      "id": 1,
+      "name":"professional tournament 1",
+      "description":"tournament good",
+      "prize":"an car",
+      "publicTournament":"False",
+      "code":"fd60",
+      "maxTeams":10,
+      "organizerId": 1
+    },
+    {
+      "id": 2,
+      "name":"professional tournament 2",
+      "description":"tournament good",
+      "prize":"an car",
+      "publicTournament":"False",
+      "code":"fd60",
+      "maxTeams":10,
+      "organizerId": 1
+    },
+    {
+      "id": 3 ,
+      "name":"professional tournament 3",
+      "description":"tournament good",
+      "prize":"an car",
+      "publicTournament":"False",
+      "code":"fd60",
+      "maxTeams":10,
+      "organizerId": 2
+    },
+    {
+      "id": 4,
+      "name":"professional tournament 4",
+      "description":"tournament good",
+      "prize":"an car",
+      "publicTournament":"False",
+      "code":"fd60",
+      "maxTeams":10,
+      "organizerId": 1
+    },{
+      "id": 5,
+      "name":"professional tournament 5",
+      "description":"tournament good",
+      "prize":"an car",
+      "publicTournament":"False",
+      "code":"fd60",
+      "maxTeams":10,
+      "organizerId": 2
+    },
+    {
+      "id": 6,
+      "name":"professional tournament 6",
+      "description":"tournament good",
+      "prize":"an car",
+      "publicTournament":"False",
+      "code":"fd60",
+      "maxTeams":10,
+      "organizerId": 2
+    },
+    {
+      "id": 7,
+      "name":"professional tournament 7",
+      "description":"tournament good",
+      "prize":"an car",
+      "publicTournament":"False",
+      "code":"fd60",
+      "maxTeams":10,
+      "organizerId": 3
+    },
+    {
+      "id": 8,
+      "name":"professional tournament 8",
+      "description":"tournament good",
+      "prize":"an car",
+      "publicTournament":"False",
+      "code":"fd60",
+      "maxTeams":10,
+      "organizerId": 4
+    },
+    {
+      "id": 9,
+      "name":"professional tournament 9",
+      "description":"tournament good",
+      "prize":"an car",
+      "publicTournament":"False",
+      "code":"fd60",
+      "maxTeams":10,
+      "organizerId": 2
+    }
+  ],
+  "tournament-more-enrollments" : [
+    {
+      "id": 1,
+      "name":"enrollment tournament 1",
+      "description":"tournament good",
+      "prize":"an car",
+      "publicTournament":"False",
+      "code":"fd60",
+      "maxTeams":10,
+      "enrollmentPlayer":50,
+      "commissionOrganizer":150,
+      "potChampion":350,
+      "organizerId": 1
+    },
+    {
+      "id": 2,
+      "name":"enrollment tournament 2",
+      "description":"tournament good",
+      "prize":"an car",
+      "publicTournament":"False",
+      "code":"fd60",
+      "maxTeams":10,
+      "enrollmentPlayer":50,
+      "commissionOrganizer":150,
+      "potChampion":350,
+      "organizerId": 1
+    },
+    {
+      "id": 3 ,
+      "name":"enrollment tournament 3",
+      "description":"tournament good",
+      "prize":"an car",
+      "publicTournament":"False",
+      "code":"fd60",
+      "maxTeams":10,
+      "enrollmentPlayer":50,
+      "commissionOrganizer":150,
+      "potChampion":350,
+      "organizerId": 2
+    },
+    {
+      "id": 4,
+      "name":"enrollment tournament 4",
+      "description":"tournament good",
+      "prize":"an car",
+      "publicTournament":"False",
+      "code":"fd60",
+      "maxTeams":10,
+      "enrollmentPlayer":50,
+      "commissionOrganizer":150,
+      "potChampion":350,
+      "organizerId": 1
+    },{
+      "id": 5,
+      "name":"enrollment tournament 5",
+      "description":"tournament good",
+      "prize":"an car",
+      "publicTournament":"False",
+      "code":"fd60",
+      "maxTeams":10,
+      "enrollmentPlayer":50,
+      "commissionOrganizer":150,
+      "potChampion":350,
+      "organizerId": 2
+    },
+    {
+      "id": 6,
+      "name":"enrollment tournament 6",
+      "description":"tournament good",
+      "prize":"an car",
+      "publicTournament":"False",
+      "code":"fd60",
+      "maxTeams":10,
+      "enrollmentPlayer":50,
+      "commissionOrganizer":150,
+      "potChampion":350,
+      "organizerId": 2
+    },
+    {
+      "id": 7,
+      "name":"enrollment tournament 7",
+      "description":"tournament good",
+      "prize":"an car",
+      "publicTournament":"False",
+      "code":"fd60",
+      "maxTeams":10,
+      "enrollmentPlayer":50,
+      "commissionOrganizer":150,
+      "potChampion":350,
+      "organizerId": 3
+    },
+    {
+      "id": 8,
+      "name":"enrollment tournament 8",
+      "description":"tournament good",
+      "prize":"an car",
+      "publicTournament":"False",
+      "code":"fd60",
+      "maxTeams":10,
+      "enrollmentPlayer":50,
+      "commissionOrganizer":150,
+      "potChampion":350,
+      "organizerId": 4
+    },
+    {
+      "id": 9,
+      "name":"enrollment tournament 9",
+      "description":"tournament good",
+      "prize":"an car",
+      "publicTournament":"False",
+      "code":"fd60",
+      "maxTeams":10,
+      "enrollmentPlayer":50,
+      "commissionOrganizer":150,
+      "potChampion":350,
+      "organizerId": 2
+    }
+  ],
+  "players": [
+    {
+      "id": 1,
+      "username":"zorro784",
+      "password":"123465",
+      "firstName":"Miguel",
+      "lastName":"Felix",
+      "description":".....",
+      "gender":"M",
+      "emailAddress":"Status@gmail.com",
+      "phoneNumber":"91111111",
+      "level": 13,
+      "hoursPlayed": 45,
+      "killDeathRatio":18
+    },
+    {
+      "id": 2,
+      "username":"Sapo784",
+      "password":"123465",
+      "firstName":"Miguel",
+      "lastName":"Felix",
+      "description":".....",
+      "gender":"M",
+      "emailAddress":"Status@gmail.com",
+      "phoneNumber":"91111111",
+      "level": 13,
+      "hoursPlayed": 45,
+      "killDeathRatio":18
+    },
+    {
+      "id": 3,
+      "username":"zdo784",
+      "password":"123465",
+      "firstName":"Miguel",
+      "lastName":"Felix",
+      "description":".....",
+      "gender":"M",
+      "emailAddress":"Status@gmail.com",
+      "phoneNumber":"91111111",
+      "level": 13,
+      "hoursPlayed": 45,
+      "killDeathRatio":18
+    },
+    {
+      "id": 4,
+      "username":"z784",
+      "password":"123465",
+      "firstName":"Miguel",
+      "lastName":"Felix",
+      "description":".....",
+      "gender":"M",
+      "emailAddress":"Status@gmail.com",
+      "phoneNumber":"91111111",
+      "level": 13,
+      "hoursPlayed": 45,
+      "killDeathRatio":18
+    },
+    {
+      "id": 5,
+      "username":"otorongo54",
+      "password":"123465",
+      "firstName":"Miguel",
+      "lastName":"Felix",
+      "description":".....",
+      "gender":"M",
+      "emailAddress":"Status@gmail.com",
+      "phoneNumber":"91111111",
+      "level": 13,
+      "hoursPlayed": 45,
+      "killDeathRatio":18
+    },
+    {
+      "id": 6,
+      "username":"zdfs15",
+      "password":"123465",
+      "firstName":"Miguel",
+      "lastName":"Felix",
+      "description":".....",
+      "gender":"M",
+      "emailAddress":"Status@gmail.com",
+      "phoneNumber":"91111111",
+      "level": 13,
+      "hoursPlayed": 45,
+      "killDeathRatio":18
+    }
+  ]
+}

@@ -25,6 +25,8 @@ import { RegisterComponent } from './pages/register/register.component';
 import {MatListModule} from '@angular/material/list';
 import {MatInputModule} from '@angular/material/input';
 import { OrganizerTournamentComponent } from './pages/organizer-tournament/organizer-tournament.component';
+import {MatPaginatorModule} from '@angular/material/paginator';
+import {MatTableModule} from '@angular/material/table';
 
 @NgModule({
   declarations: [
@@ -56,7 +58,9 @@ import { OrganizerTournamentComponent } from './pages/organizer-tournament/organ
     FormsModule,
     MatFormFieldModule,
     ReactiveFormsModule,
-    MatListModule
+    MatListModule,
+    MatPaginatorModule,
+    MatTableModule
   ],
   providers: [authInterceptorProviders],
   bootstrap: [AppComponent]
