@@ -75,19 +75,19 @@ export class TournamentComponent implements OnInit, AfterViewInit {
   }
   getAllFreeTournaments(id): void {
     this.httpFreeTournament.getListByOrganizerId(id).subscribe((response: any) => {
-      this.dataSource.data = response;
+      this.dataSource.data = response.content;
       console.log(this.dataSource.data);
     });
   }
   getAllProfessionalTournaments(id): void {
     this.httpProfessional.getListByOrganizerId(id).subscribe((response: any) => {
-      this.dataSourceProfessional.data = response;
+      this.dataSourceProfessional.data = response.content;
       console.log(this.dataSourceProfessional.data);
     });
   }
   getAllEnrollmentsTournaments(id): void {
     this.httpEnrollment.getListByOrganizerId(id).subscribe((response: any) => {
-      this.dataSourceEnrollment.data = response;
+      this.dataSourceEnrollment.data = response.content;
       console.log(this.dataSourceEnrollment.data);
     });
   }
