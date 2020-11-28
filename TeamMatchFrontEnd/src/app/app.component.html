@@ -11,6 +11,7 @@
         <a mat-button *ngIf="isLoggedIn" [routerLink]="'/organizers'">Organizers</a>
         <a mat-button *ngIf="isLoggedIn" [routerLink]="'/player/organizers'">Tournaments</a>
         <a mat-button *ngIf="isLoggedIn" [routerLink]="'/teams'">Teams</a>
+        <a mat-button *ngIf="isLoggedIn" [routerLink]="'/add-teamplayer'">Add Team Players</a>
       </div>
       <span class="flex-expand"></span>
       <div *ngIf="!isLoggedIn">

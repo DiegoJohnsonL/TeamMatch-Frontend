@@ -17,7 +17,7 @@ const routes: Routes = [
   { path: 'playerHomePage', component: PlayerHomePageComponent },
   { path: 'organizerHomePage', component: OrganizerHomePageComponent },
   { path: 'teams', component: TeamsComponent },
-  { path: 'addTeamPlayer', component: AddTeamplayerComponent },
+  { path: 'add-teamplayer', component: AddTeamplayerComponent },
   { path: 'organizers', component: OrganizersComponent},
   {path: 'login', component: LoginComponent},
   {path: 'register', component: RegisterComponent },
