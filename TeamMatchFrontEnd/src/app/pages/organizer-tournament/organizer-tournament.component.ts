@@ -35,7 +35,7 @@ export class OrganizerTournamentComponent implements OnInit , AfterViewInit{
   }
   getAllStudents(): void {
     this.httpOrganizer.getOrganizerList().subscribe((response: any) => {
-      this.dataSource.data = response;
+      this.dataSource.data = response.content;
       console.log(this.dataSource.data);
     });
   }
