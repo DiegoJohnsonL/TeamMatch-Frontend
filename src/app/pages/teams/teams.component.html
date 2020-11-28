@@ -1,0 +1,39 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>{{ isEditMode ? 'Edit Team' : 'Create Team' }}</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <form (submit)="onSubmit()" #teamForm="ngForm">
+      <p>
+        <mat-form-field>
+          <mat-label>Team Name</mat-label>
+          <input matInput placeholder="Name" name="name" required [(ngModel)]="teamData.name">
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field>
+          <mat-label>Size</mat-label>
+          <input matInput placeholder="Size" name="size" type="number" required [(ngModel)]="teamData.teamSize">
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field>
+          <mat-label>Hours Played</mat-label>
+          <input matInput placeholder="Hours" name="hours" required [(ngModel)]="teamData.hoursPlayed">
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field>
+          <mat-label>Level Average</mat-label>
+          <input matInput placeholder="Level" name="level" required [(ngModel)]="teamData.levelAverage">
+        </mat-form-field>
+      </p>
+      <p>
+        <ng-container>
+          <button mat-button color="primary">{{ isEditMode ? 'Update' : 'Add'}}</button>
+          <a mat-button color="warn" (click)="cancelEdit()">Cancel</a>
+        </ng-container>
+      </p>
+    </form>
+  </mat-card-content>
+</mat-card>
