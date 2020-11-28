@@ -6,6 +6,7 @@
       </button>
       <span class="app-name">Team Match</span>
       <div routerLinkActive="active">
+        <a mat-button *ngIf="isLoggedIn" (click)="toHomePage()">Home</a>
         <a mat-button *ngIf="isLoggedIn" [routerLink]="'/organizers'">Players</a>
         <a mat-button *ngIf="isLoggedIn" [routerLink]="'/players'">Organizers</a>
       </div>

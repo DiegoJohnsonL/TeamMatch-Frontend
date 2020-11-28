@@ -9,8 +9,7 @@ import {TokenStorageService} from './token-storage.service';
   providedIn: 'root'
 })
 export class HttpPlayerService {
-  basePath = 'https://teammatchtournament.herokuapp.com/api/players';
- // basePath = 'http://localhost:8081/api/organizers';
+  basePath = 'https://team-match-backend.herokuapp.com/api/players';
   constructor(private http: HttpClient, tokenStorageService: TokenStorageService) { }
   httpOptions = {
     headers: new HttpHeaders({
@@ -30,8 +29,8 @@ export class HttpPlayerService {
     return this.http.post<Player>(this.basePath, JSON.stringify(item), this.httpOptions)
       .pipe(retry(2), catchError(this.handleError));
   }
-  getPlayer(id): Observable<any> {
-    return this.http.get<any>(`${this.basePath}/${id}`, this.httpOptions )
+  getPlayer(id): Observable<Player> {
+    return this.http.get<Player>(`${this.basePath}/${id}`, this.httpOptions )
       .pipe(retry(2), catchError(this.handleError));
   }
   // Get Player Data
