@@ -28,6 +28,7 @@ import {MatPaginatorModule} from "@angular/material/paginator";
 import {MatTableModule} from "@angular/material/table";
 import {TournamentComponent} from './pages/tournament/tournament.component';
 import {OrganizerTournamentComponent} from './pages/organizer-tournament/organizer-tournament.component';
+import { TournamentPlayerAssingComponent } from './pages/tournament-player-assing/tournament-player-assing.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import {OrganizerTournamentComponent} from './pages/organizer-tournament/organiz
     ProfileComponent,
     RegisterComponent,
     TournamentComponent,
-    OrganizerTournamentComponent
+    OrganizerTournamentComponent,
+    TournamentPlayerAssingComponent
   ],
   imports: [
     BrowserModule,
